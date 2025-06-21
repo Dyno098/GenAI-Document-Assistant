@@ -3,7 +3,7 @@ import google.generativeai as genai
 # Assumes genai.configure() has already been done in app.py
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-
+# Function for generating question
 def generate_questions(text, num=3):
     prompt = (
         f"Based only on the document below, generate exactly {num} challenging, logic-based, context-grounded questions."
@@ -23,7 +23,8 @@ def generate_questions(text, num=3):
                 questions.append(q)
 
     return questions[:num]
-
+    
+# Function for evaluating answers
 def evaluate_answer(document_text, question, user_answer):
     eval_prompt = (
         f"Document:\n{document_text[:15000]}\n\n"
