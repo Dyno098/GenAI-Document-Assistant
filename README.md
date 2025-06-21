@@ -112,7 +112,7 @@ streamlit run app.py
 ## 📸 Screenshot
 
 *(Optional: Add a screenshot here of the UI if you'd like)*
-![alt text](image.png)
+![alt text](https://github.com/Dyno098/GenAI-Document-Assistant/blob/master/Screenshot%202025-06-21%20170809.png)
 
 ---
 
