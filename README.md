@@ -113,6 +113,7 @@ streamlit run app.py
 
 ![alt text](https://github.com/Dyno098/GenAI-Document-Assistant/blob/master/Screenshot%202025-06-21%20170809.png)
 ![alt text](https://github.com/Dyno098/GenAI-Document-Assistant/blob/master/Screenshot%202025-06-21%20101755.png)
+![alt text](https://github.com/Dyno098/GenAI-Document-Assistant/blob/master/Screenshot%202025-06-21%20101822.png)
 
 ---
 
