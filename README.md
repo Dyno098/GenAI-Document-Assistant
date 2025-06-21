@@ -27,8 +27,8 @@ Built with 🧠 Google Gemini + 💻 Streamlit.
 
 1. **Clone this repository**
 ```bash
-git clone https://github.com/yourusername/genai-doc-assistant.git
-cd genai-doc-assistant
+git clone https://github.com/Dyno098/GenAI-Document-Assistant.git
+cd GenAI-Document-Assistant
 ```
 
 2. **Install dependencies**
