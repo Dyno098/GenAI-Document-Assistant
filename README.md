@@ -1,4 +1,4 @@
-# 📄 GenAI Document Assistant
+#  GenAI Document Assistant
 
 A smart, document-aware assistant that uses **Google Gemini** to:
 
@@ -8,11 +8,11 @@ A smart, document-aware assistant that uses **Google Gemini** to:
 - Pose logic-based challenge questions  
 - Evaluate answers with justification from the document  
 
-Built with 🧠 Google Gemini + 💻 Streamlit.
+Built with Google Gemini + Streamlit.
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✅ Upload PDF/TXT documents  
 - ✅ Auto-generates a concise summary  
@@ -23,7 +23,7 @@ Built with 🧠 Google Gemini + 💻 Streamlit.
 
 ---
 
-## 🧰 Setup Instructions
+## Setup Instructions
 
 1. **Clone this repository**
 ```bash
@@ -44,7 +44,7 @@ Create a `.env` file or replace this line in `app.py`:
 genai.configure(api_key="YOUR_GEMINI_API_KEY")
 ```
 
-> 🔐 You can get a Gemini API key from [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
+> You can get a Gemini API key from [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
 
 4. **Run the Streamlit app**
 
@@ -54,18 +54,18 @@ streamlit run app.py
 
 ---
 
-## 🧠 Architecture & Reasoning Flow
+## Architecture & Reasoning Flow
 
-### 📦 1. Document Upload
+### 1. Document Upload
 - PDF or TXT uploaded via `streamlit.file_uploader`
 - Saved to `uploaded_docs/`
 - Text extracted using PyMuPDF (for PDF) or simple `.read()` (for TXT)
 
-### 🧠 2. Summary
+### 2. Summary
 - First ~2000 characters sent to a summarization model (`facebook/bart-large-cnn`)  
 - Summary is shown immediately
 
-### 💬 3. Ask Anything (QA Mode)
+### 3. Ask Anything (QA Mode)
 - User asks free-form question
 - Gemini is prompted with:
   ```
@@ -75,14 +75,14 @@ streamlit run app.py
   ```
 - Gemini responds with contextually grounded answer
 
-### 🎯 4. Challenge Me (Logic Questions)
+### 4. Challenge Me (Logic Questions)
 - Gemini is asked to generate exactly 3 logical questions:
   ```
   Generate 3 logic-based questions based on the document. Number them.
   ```
 - Streamlit form collects user's answers
 
-### ✅ 5. Feedback & Evaluation
+### 5. Feedback & Evaluation
 - Each answer is sent with:
   ```
   Document: <text>
@@ -94,7 +94,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -109,7 +109,7 @@ streamlit run app.py
 
 ---
 
-## 📸 Screenshot
+## Screenshot
 
 ![alt text](https://github.com/Dyno098/GenAI-Document-Assistant/blob/master/Screenshot%202025-06-21%20170809.png)
 ![alt text](https://github.com/Dyno098/GenAI-Document-Assistant/blob/master/Screenshot%202025-06-21%20101755.png)
@@ -119,7 +119,7 @@ streamlit run app.py
 
 ---
 
-## 📌 Notes
+## Notes
 
 - Make sure your Gemini key has access to `gemini-1.5-flash`
 - Avoid uploading extremely large files (>30K tokens)
